@@ -105,6 +105,9 @@ function removeScore() {
     localStorage.removeItem('score');
 
     updateScores();
+
+    document.querySelector('.js-moves).innerHTML = `RESULT`;
+                           document.querySelector('.js-commoves).innerHTML = ``;
 };
 
  function updateScores() { document.querySelector('.js-Score').innerHTML = 
