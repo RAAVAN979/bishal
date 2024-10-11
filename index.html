@@ -52,7 +52,7 @@ marquee{color:wheat; padding-top: -20px; margin-top: -50px; padding-bottom: 50px
 "><img src="reset.png"></button>
 </div>
 <p class="js-moves">Your move</p>
-<p class="js-commoves">YOUR VS COMPUTER MOVES</p>
+<p class="js-commoves"></p>
 <p class="js-Score">Your Score</p>
 
     <footer>Copyright ©Bishal Gaming, 2024</footer>
@@ -89,7 +89,7 @@ marquee{color:wheat; padding-top: -20px; margin-top: -50px; padding-bottom: 50px
 
          document.querySelector('.js-moves').innerHTML = result;
 
-    document.querySelector('.js-commoves').innerHTML = `You ${playerMove} - ${comMove} Computer`; 
+    document.querySelector('.js-commoves').innerHTML = `You <img src="${playerMove}-emoji.png"> <img src="${comMove-emoji.png}> Computer`; 
         updateScores();
 
           
