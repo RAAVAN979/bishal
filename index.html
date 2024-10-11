@@ -45,9 +45,9 @@ marquee{color:wheat; padding-top: -20px; margin-top: -50px; padding-bottom: 50px
 <marquee direction="">Welcome to Bishal's Gaming Arena </marquee>
 
 <div class="btn">
-<button onclick="playGame('ROCK');"   ><img src="rock-emoji.png"></button>
-<button onclick="playGame('PAPER');" ><img src="paper-emoji.png"></button>
-<button onclick="playGame('SCISSOR');" ><img src="scissors-emoji.png"></button>
+<button onclick="playGame('rock');"   ><img src="rock-emoji.png"></button>
+<button onclick="playGame('paper');" ><img src="paper-emoji.png"></button>
+<button onclick="playGame('scissors');" ><img src="scissors-emoji.png"></button>
 <button onclick="removeScore();
 "><img src="reset.png"></button>
 </div>
@@ -73,15 +73,15 @@ marquee{color:wheat; padding-top: -20px; margin-top: -50px; padding-bottom: 50px
    
         let result = '';
 
-        if (playerMove === 'ROCK') {
-         if (comMove === 'ROCK') { result = 'TIE'; }
-         else if (comMove === 'PAPER') { result = 'YOU LOST'; } else if (comMove === 'SCISSOR') { result = 'YOU WON'; } 
+        if (playerMove === 'roc') {
+         if (comMove === 'rock') { result = 'TIE'; }
+         else if (comMove === 'paper') { result = 'YOU LOST'; } else if (comMove === 'scissors') { result = 'YOU WON'; } 
          }
-          else if (playerMove === 'PAPER') { if (comMove === 'ROCK') { result = 'YOU WON';}
-         else if (comMove === 'PAPER') { result = 'TIE'; } else if (comMove === 'SCISSOR') { result = 'YOU LOST'; } 
+          else if (playerMove === 'paper') { if (comMove === 'rock') { result = 'YOU WON';}
+         else if (comMove === 'paper') { result = 'TIE'; } else if (comMove === 'scissors') { result = 'YOU LOST'; } 
         }
-         else if (playerMove === 'SCISSOR') { if (comMove === 'ROCK') { result = 'YOU LOST';}
-         else if (comMove === 'PAPER') { result = 'YOU WON'; } else if (comMove === 'SCISSOR') { result = 'TIE'; } }
+         else if (playerMove === 'scissors') { if (comMove === 'rock') { result = 'YOU LOST';}
+         else if (comMove === 'paper') { result = 'YOU WON'; } else if (comMove === 'scissors') { result = 'TIE'; } }
 
          if (result === 'YOU WON') { score.wins += 1; } else if (result === 'YOU LOST') { score.losses += 1; } else if (result === 'TIE') { score.tie += 1; }
 
