@@ -95,6 +95,10 @@ marquee{color:wheat; padding-top: -20px; margin-top: -50px; padding-bottom: 50px
           
 }
 
+     function updateScores() { document.querySelector('.js-Score').innerHTML = 
+ `Wins: ${score.wins}, Losses: ${score.losses}, Tie: ${score.tie}`};
+
+
 function removeScore() {
     score = {
         wins: 0,
@@ -106,12 +110,10 @@ function removeScore() {
 
     updateScores();
 
-    document.querySelector('.js-moves).innerHTML = `RESULT`;
-                           document.querySelector('.js-commoves).innerHTML = ``;
+   
 };
 
- function updateScores() { document.querySelector('.js-Score').innerHTML = 
- `Wins: ${score.wins}, Losses: ${score.losses}, Tie: ${score.tie}`};
+   
 
    
    
